@@ -1,0 +1,21 @@
+database: flight_2
+annotator: GPT-4o + human_review
+column_labels:
+  airlines:
+    uid: free
+    Airline: free
+    Abbreviation: free
+    Country: free
+  airports:
+    City: free
+    AirportCode: free
+    AirportName: free
+    Country: free
+    CountryAbbrev: free
+  flights:
+    Airline: free
+    FlightNo: free
+    SourceAirport: free
+    DestAirport: free
+cross_domain_rules: []
+review_date: '2026-08-04'

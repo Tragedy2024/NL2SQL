@@ -1,0 +1,13 @@
+{
+  "rq": "RQ1",
+  "dataset": "bird",
+  "mode": "zeroshot",
+  "n_queries": 1534,
+  "n_repetitions": 1,
+  "total_sub_queries": 1529,
+  "total_violations": 38,
+  "S_VR": 0.0249,
+  "S_VR_pct": 2.5,
+  "violation_types": {},
+  "violation_severities": {}
+}

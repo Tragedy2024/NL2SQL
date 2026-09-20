@@ -1,0 +1,95 @@
+column_labels:
+  frpm:
+    CDSCode: free
+    Academic Year: free
+    County Code: free
+    District Code: free
+    School Code: free
+    County Name: free
+    District Name: free
+    School Name: free
+    District Type: free
+    School Type: free
+    Educational Option Type: free
+    NSLP Provision Status: free
+    Charter School (Y/N): free
+    Charter School Number: free
+    Charter Funding Type: free
+    IRC: free
+    Low Grade: free
+    High Grade: free
+    Enrollment (K-12): free
+    Free Meal Count (K-12): free
+    Percent (%) Eligible Free (K-12): free
+    FRPM Count (K-12): free
+    Percent (%) Eligible FRPM (K-12): free
+    Enrollment (Ages 5-17): free
+    Free Meal Count (Ages 5-17): free
+    Percent (%) Eligible Free (Ages 5-17): free
+    FRPM Count (Ages 5-17): free
+    Percent (%) Eligible FRPM (Ages 5-17): free
+    2013-14 CALPADS Fall 1 Certification Status: free
+  satscores:
+    cds: free
+    rtype: free
+    sname: free
+    dname: free
+    cname: free
+    enroll12: free
+    NumTstTakr: free
+    AvgScrRead: free
+    AvgScrMath: free
+    AvgScrWrite: free
+    NumGE1500: free
+  schools:
+    CDSCode: free
+    NCESDist: free
+    NCESSchool: free
+    StatusType: free
+    County: free
+    District: free
+    School: free
+    Street: free
+    StreetAbr: free
+    City: free
+    Zip: free
+    State: free
+    MailStreet: free
+    MailStrAbr: free
+    MailCity: free
+    MailZip: free
+    MailState: free
+    Phone: free
+    Ext: free
+    Website: free
+    OpenDate: free
+    ClosedDate: free
+    Charter: free
+    CharterNum: free
+    FundingType: free
+    DOC: free
+    DOCType: free
+    SOC: free
+    SOCType: free
+    EdOpsCode: free
+    EdOpsName: free
+    EILCode: free
+    EILName: free
+    GSoffered: free
+    GSserved: free
+    Virtual: free
+    Magnet: free
+    Latitude: free
+    Longitude: free
+    AdmFName1: free
+    AdmLName1: free
+    AdmEmail1: free
+    AdmFName2: free
+    AdmLName2: free
+    AdmEmail2: free
+    AdmFName3: free
+    AdmLName3: free
+    AdmEmail3: free
+    LastUpdate: free
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'

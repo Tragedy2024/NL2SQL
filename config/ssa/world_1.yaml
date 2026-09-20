@@ -1,0 +1,35 @@
+database: world_1
+annotator: GPT-4o + human_review
+column_labels:
+  city:
+    ID: free
+    Name: free
+    CountryCode: free
+    District: free
+    Population: free
+  sqlite_sequence:
+    name: free
+    seq: free
+  country:
+    Code: free
+    Name: free
+    Continent: free
+    Region: free
+    SurfaceArea: free
+    IndepYear: free
+    Population: free
+    LifeExpectancy: free
+    GNP: free
+    GNPOld: free
+    LocalName: free
+    GovernmentForm: free
+    HeadOfState: free
+    Capital: free
+    Code2: free
+  countrylanguage:
+    CountryCode: free
+    Language: free
+    IsOfficial: free
+    Percentage: free
+cross_domain_rules: []
+review_date: '2026-08-04'

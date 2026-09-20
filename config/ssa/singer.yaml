@@ -1,0 +1,17 @@
+database: singer
+annotator: GPT-4o + human_review
+column_labels:
+  singer:
+    Singer_ID: free
+    Name: free
+    Birth_Year: free
+    Net_Worth_Millions: free
+    Citizenship: free
+  song:
+    Song_ID: free
+    Title: free
+    Singer_ID: free
+    Sales: free
+    Highest_Position: free
+cross_domain_rules: []
+review_date: '2026-08-04'

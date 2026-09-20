@@ -1,0 +1,59 @@
+column_labels:
+  attendance:
+    link_to_event: free
+    link_to_member: free
+  budget:
+    budget_id: free
+    category: free
+    spent: controlled
+    remaining: controlled
+    amount: controlled
+    event_status: free
+    link_to_event: free
+  event:
+    event_id: free
+    event_name: free
+    event_date: free
+    type: free
+    notes: free
+    location: free
+    status: free
+  expense:
+    expense_id: free
+    expense_description: free
+    expense_date: free
+    cost: controlled
+    approved: free
+    link_to_member: free
+    link_to_budget: free
+  income:
+    income_id: free
+    date_received: free
+    amount: controlled
+    source: free
+    notes: free
+    link_to_member: free
+  major:
+    major_id: free
+    major_name: free
+    department: free
+    college: free
+  member:
+    member_id: free
+    first_name: controlled
+    last_name: controlled
+    email: controlled
+    position: free
+    t_shirt_size: free
+    phone: controlled
+    zip: free
+    link_to_major: free
+  zip_code:
+    zip_code: free
+    type: free
+    city: free
+    county: free
+    state: free
+    short_state: free
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'

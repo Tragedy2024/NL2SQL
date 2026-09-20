@@ -1,0 +1,222 @@
+{
+  "generated_by": "experiments/post_disposition_ex.py (CTE-inline)",
+  "note": "Post-disposition utility: audited plans replayed with frozen code + frozen SSA; final answer = final sub-query with upstream steps inlined as CTEs step{id}; ex_post = result-set equality vs executed gold.",
+  "per_group": [
+    {
+      "label": "mac:bird_fewshot",
+      "n_records": 459,
+      "n_changed": 7,
+      "n_executed_ok": 7,
+      "n_execution_failed": 0,
+      "ex_post": 0.5714,
+      "ex_cached_on_same_cases": 0.5714,
+      "by_level": {
+        "L0": {
+          "n": 2,
+          "ex_post": 1.0,
+          "ex_cached": 1.0
+        },
+        "L1": {
+          "n": 5,
+          "ex_post": 0.4,
+          "ex_cached": 0.4
+        }
+      }
+    },
+    {
+      "label": "mac:bird_zeroshot",
+      "n_records": 458,
+      "n_changed": 0,
+      "n_executed_ok": 0,
+      "n_execution_failed": 0,
+      "ex_post": null,
+      "ex_cached_on_same_cases": null,
+      "by_level": {}
+    },
+    {
+      "label": "mac:spider_fewshot",
+      "n_records": 309,
+      "n_changed": 6,
+      "n_executed_ok": 6,
+      "n_execution_failed": 0,
+      "ex_post": 0.8333,
+      "ex_cached_on_same_cases": 0.8333,
+      "by_level": {
+        "L1": {
+          "n": 3,
+          "ex_post": 0.6667,
+          "ex_cached": 0.6667
+        },
+        "L2": {
+          "n": 3,
+          "ex_post": 1.0,
+          "ex_cached": 1.0
+        }
+      }
+    },
+    {
+      "label": "mac:spider_zeroshot",
+      "n_records": 309,
+      "n_changed": 3,
+      "n_executed_ok": 3,
+      "n_execution_failed": 0,
+      "ex_post": 1.0,
+      "ex_cached_on_same_cases": 1.0,
+      "by_level": {
+        "L2": {
+          "n": 3,
+          "ex_post": 1.0,
+          "ex_cached": 1.0
+        }
+      }
+    },
+    {
+      "label": "qsg:bird_fewshot",
+      "n_records": 459,
+      "n_changed": 114,
+      "n_executed_ok": 15,
+      "n_execution_failed": 99,
+      "ex_post": 0.8,
+      "ex_cached_on_same_cases": 0.8,
+      "by_level": {
+        "L1": {
+          "n": 15,
+          "ex_post": 0.8,
+          "ex_cached": 0.8
+        }
+      }
+    },
+    {
+      "label": "qsg:bird_zeroshot",
+      "n_records": 456,
+      "n_changed": 99,
+      "n_executed_ok": 21,
+      "n_execution_failed": 78,
+      "ex_post": 0.5714,
+      "ex_cached_on_same_cases": 0.5714,
+      "by_level": {
+        "L0": {
+          "n": 3,
+          "ex_post": 1.0,
+          "ex_cached": 1.0
+        },
+        "L1": {
+          "n": 18,
+          "ex_post": 0.5,
+          "ex_cached": 0.5
+        }
+      }
+    },
+    {
+      "label": "qsg:spider_fewshot",
+      "n_records": 309,
+      "n_changed": 39,
+      "n_executed_ok": 15,
+      "n_execution_failed": 24,
+      "ex_post": 0.6,
+      "ex_cached_on_same_cases": 0.6,
+      "by_level": {
+        "L1": {
+          "n": 15,
+          "ex_post": 0.6,
+          "ex_cached": 0.6
+        }
+      }
+    },
+    {
+      "label": "qsg:spider_zeroshot",
+      "n_records": 309,
+      "n_changed": 30,
+      "n_executed_ok": 15,
+      "n_execution_failed": 15,
+      "ex_post": 0.8,
+      "ex_cached_on_same_cases": 0.8,
+      "by_level": {
+        "L0": {
+          "n": 3,
+          "ex_post": 1.0,
+          "ex_cached": 1.0
+        },
+        "L1": {
+          "n": 12,
+          "ex_post": 0.75,
+          "ex_cached": 0.75
+        }
+      }
+    },
+    {
+      "label": "rq1:bird_fewshot",
+      "n_records": 1538,
+      "n_changed": 21,
+      "n_executed_ok": 21,
+      "n_execution_failed": 0,
+      "ex_post": 0.619,
+      "ex_cached_on_same_cases": 0.619,
+      "by_level": {
+        "L0": {
+          "n": 2,
+          "ex_post": 0.0,
+          "ex_cached": 0.0
+        },
+        "L1": {
+          "n": 19,
+          "ex_post": 0.6842,
+          "ex_cached": 0.6842
+        }
+      }
+    },
+    {
+      "label": "rq1:bird_zeroshot",
+      "n_records": 1529,
+      "n_changed": 1,
+      "n_executed_ok": 1,
+      "n_execution_failed": 0,
+      "ex_post": 1.0,
+      "ex_cached_on_same_cases": 1.0,
+      "by_level": {
+        "L2": {
+          "n": 1,
+          "ex_post": 1.0,
+          "ex_cached": 1.0
+        }
+      }
+    },
+    {
+      "label": "rq1:spider_fewshot",
+      "n_records": 1034,
+      "n_changed": 24,
+      "n_executed_ok": 24,
+      "n_execution_failed": 0,
+      "ex_post": 0.7083,
+      "ex_cached_on_same_cases": 0.7083,
+      "by_level": {
+        "L1": {
+          "n": 17,
+          "ex_post": 0.6471,
+          "ex_cached": 0.6471
+        },
+        "L2": {
+          "n": 7,
+          "ex_post": 0.8571,
+          "ex_cached": 0.8571
+        }
+      }
+    },
+    {
+      "label": "rq1:spider_zeroshot",
+      "n_records": 1032,
+      "n_changed": 9,
+      "n_executed_ok": 9,
+      "n_execution_failed": 0,
+      "ex_post": 0.8889,
+      "ex_cached_on_same_cases": 0.8889,
+      "by_level": {
+        "L2": {
+          "n": 9,
+          "ex_post": 0.8889,
+          "ex_cached": 0.8889
+        }
+      }
+    }
+  ]
+}

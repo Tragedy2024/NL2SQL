@@ -1,0 +1,29 @@
+{
+  "rq": "RQ1",
+  "dataset": "bird",
+  "mode": "fewshot",
+  "n_records_raw": 1538,
+  "n_queries": 1534,
+  "n_skipped_empty": 0,
+  "parse_failures_L3": 2,
+  "total_sub_queries": 2978,
+  "total_violations_before": 23,
+  "S_VR": 0.0077,
+  "total_violations_after": 0,
+  "S_VR_after": 0.0,
+  "S_AR": 1.0,
+  "n_rewrites": 22,
+  "EX": 0.6278,
+  "degradation": {
+    "L0": 1513,
+    "L1": 19,
+    "L3": 2
+  },
+  "violation_types": {
+    "column_needs_aggregation": 21,
+    "column_unnecessary_exposure": 2
+  },
+  "violation_severities": {
+    "rewritable": 23
+  }
+}

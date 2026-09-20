@@ -1,0 +1,20 @@
+database: museum_visit
+annotator: GPT-4o + human_review
+column_labels:
+  museum:
+    Museum_ID: free
+    Name: free
+    Num_of_Staff: free
+    Open_Year: free
+  visitor:
+    ID: free
+    Name: controlled
+    Level_of_membership: free
+    Age: controlled
+  visit:
+    Museum_ID: free
+    visitor_ID: free
+    Num_of_Ticket: free
+    Total_spent: free
+cross_domain_rules: []
+review_date: '2026-08-04'

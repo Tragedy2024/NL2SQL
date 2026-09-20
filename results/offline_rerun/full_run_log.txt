@@ -1,0 +1,61 @@
+
+[RQ1 bird_zeroshot] reading E:\experiment\NL2SQL\results\rq1\rq1_bird_zeroshot_results.jsonl
+  -> E:\experiment\NL2SQL\results\offline_rerun\bird_zeroshot_summary.json
+     S-VR 0.0 -> 0.0 (S-AR None), violations 0
+
+[RQ1 spider_fewshot] reading E:\experiment\NL2SQL\results\rq1\rq1_spider_fewshot_results.jsonl
+  -> E:\experiment\NL2SQL\results\offline_rerun\spider_fewshot_summary.json
+     S-VR 0.0152 -> 0.0012 (S-AR 0.9231), violations 26
+
+[RQ1 spider_zeroshot] reading E:\experiment\NL2SQL\results\rq1\rq1_spider_zeroshot_results.jsonl
+  -> E:\experiment\NL2SQL\results\offline_rerun\spider_zeroshot_summary.json
+     S-VR 0.001 -> 0.001 (S-AR 0.0), violations 1
+
+[RQ2 bird_zeroshot] reading E:\experiment\NL2SQL\results\rq2\rq2_bird_zeroshot_results.jsonl
+  ... 500 records processed
+  ... 1000 records processed
+  ... 1500 records processed
+  ... 2000 records processed
+  ... 2500 records processed
+  ... 3000 records processed
+  -> E:\experiment\NL2SQL\results\offline_rerun\bird_zeroshot_summary.json
+     B0: EX=0.5197 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 458}
+     B1: EX=0.5197 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 458}
+     B2: EX=0.5197 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 458}
+     B3: EX=0.512 S-VR 0.07->0.0656 S-AR=0.0625 V=32 deg={}
+     B4: EX=0.5207 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 459}
+     B5: EX=0.4934 S-VR 0.4298->0.4298 S-AR=0.0 V=927 deg={'L0': 357, 'L1': 99}
+     B6: EX=0.4934 S-VR 0.2378->0.2253 S-AR=0.0526 V=513 deg={'L0': 393, 'L3': 27, 'L1': 36}
+     stats: {"mcnemar_B1_vs_B6_EX": {"statistic": 1.5556, "p_value": 0.2467, "significant": false, "table": {"both_correct": 168, "a_only_correct": 70, "b_only_correct": 56, "neither_correct": 161}}, "bootstrap_B
+
+[RQ2 spider_fewshot] reading E:\experiment\NL2SQL\results\rq2\rq2_spider_fewshot_results.jsonl
+  ... 500 records processed
+  ... 1000 records processed
+  ... 1500 records processed
+  ... 2000 records processed
+  -> E:\experiment\NL2SQL\results\offline_rerun\spider_fewshot_summary.json
+     B0: EX=0.767 S-VR 0.0076->0.0076 S-AR=0.0 V=4 deg={'L0': 309}
+     B1: EX=0.767 S-VR 0.0076->0.0076 S-AR=0.0 V=4 deg={'L0': 306, 'L1': 3}
+     B2: EX=0.767 S-VR 0.0076->0.0 S-AR=1.0 V=4 deg={'L0': 309}
+     B3: EX=0.7443 S-VR 0.0352->0.0294 S-AR=0.1667 V=18 deg={}
+     B4: EX=0.7735 S-VR 0.0178->0.0 S-AR=1.0 V=9 deg={'L0': 309}
+     B5: EX=0.5784 S-VR 0.0796->0.0796 S-AR=0.0 V=102 deg={'L0': 267, 'L3': 3, 'L1': 39}
+     B6: EX=0.549 S-VR 0.0422->0.0281 S-AR=0.3333 V=54 deg={'L0': 282, 'L3': 3, 'L1': 24}
+     stats: {"mcnemar_B1_vs_B6_EX": {"statistic": 60.2658, "p_value": 0.0, "significant": true, "table": {"both_correct": 163, "a_only_correct": 74, "b_only_correct": 5, "neither_correct": 67}}, "bootstrap_B6_SVR
+
+[RQ2 spider_zeroshot] reading E:\experiment\NL2SQL\results\rq2\rq2_spider_zeroshot_results.jsonl
+  ... 500 records processed
+  ... 1000 records processed
+  ... 1500 records processed
+  ... 2000 records processed
+  -> E:\experiment\NL2SQL\results\offline_rerun\spider_zeroshot_summary.json
+     B0: EX=0.7702 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 309}
+     B1: EX=0.7702 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 309}
+     B2: EX=0.7702 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 309}
+     B3: EX=0.7638 S-VR 0.0259->0.0259 S-AR=0.0 V=8 deg={}
+     B4: EX=0.767 S-VR 0.0->0.0 S-AR=None V=0 deg={'L0': 309}
+     B5: EX=0.5922 S-VR 0.0609->0.0609 S-AR=0.0 V=78 deg={'L0': 279, 'L1': 30}
+     B6: EX=0.5534 S-VR 0.0234->0.0141 S-AR=0.4 V=30 deg={'L0': 300, 'L1': 9}
+     stats: {"mcnemar_B1_vs_B6_EX": {"statistic": 61.4932, "p_value": 0.0, "significant": true, "table": {"both_correct": 168, "a_only_correct": 70, "b_only_correct": 3, "neither_correct": 68}}, "bootstrap_B6_SVR
+
+[OK] full report: E:\experiment\NL2SQL\results\offline_rerun\rerun_report.json

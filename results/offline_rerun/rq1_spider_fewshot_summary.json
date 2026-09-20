@@ -1,0 +1,31 @@
+{
+  "rq": "RQ1",
+  "dataset": "spider",
+  "mode": "fewshot",
+  "n_records_raw": 1034,
+  "n_queries": 1034,
+  "n_skipped_empty": 0,
+  "parse_failures_L3": 1,
+  "total_sub_queries": 1715,
+  "total_violations_before": 26,
+  "S_VR": 0.0152,
+  "total_violations_after": 0,
+  "S_VR_after": 0.0,
+  "S_AR": 1.0,
+  "n_rewrites": 22,
+  "EX": 0.7621,
+  "degradation": {
+    "L0": 1009,
+    "L1": 17,
+    "L2": 7,
+    "L3": 1
+  },
+  "violation_types": {
+    "column_needs_aggregation": 25,
+    "blocked_column_in_select": 1
+  },
+  "violation_severities": {
+    "rewritable": 25,
+    "must_degrade": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "rq": "RQ1",
+  "dataset": "bird",
+  "mode": "fewshot",
+  "n_queries": 1534,
+  "n_repetitions": 1,
+  "total_sub_queries": 2982,
+  "total_violations": 65,
+  "S_VR": 0.0218,
+  "S_VR_pct": 2.2,
+  "violation_types": {
+    "column_unnecessary_exposure": 1
+  },
+  "violation_severities": {
+    "rewritable": 1
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "A1_cross_domain_rule_active": {
+    "v_before": 1,
+    "v_after": 1,
+    "n_rewrites": 0,
+    "level": "L2",
+    "message": "Cannot compute exact result due to privacy policy constraints. The following output represents a related but different query. Contact the data administrator for full access authorization.",
+    "violations_before": [
+      "cross_domain_personal_join"
+    ],
+    "violations_after": [
+      "cross_domain_personal_join"
+    ],
+    "sub_results": [
+      {
+        "index": 0,
+        "violations_before": 1,
+        "violations_after": 1,
+        "rewritten": false,
+        "rewrite_log": []
+      }
+    ],
+    "final_plan": [
+      {
+        "id": "0_a",
+        "sql": "SELECT COUNT(*) AS aggregate_count\nFROM Students AS s"
+      },
+      {
+        "id": "0_b",
+        "sql": "SELECT COUNT(*) AS aggregate_count\nFROM Addresses AS a"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM Students WHERE middle_name IS NOT NULL"
+      }
+    ]
+  },
+  "A2_control_no_rule": {
+    "v_before": 0,
+    "v_after": 0,
+    "n_rewrites": 0,
+    "level": "L0",
+    "message": "",
+    "violations_before": [],
+    "violations_after": [],
+    "sub_results": [],
+    "final_plan": [
+      {
+        "id": 0,
+        "sql": "SELECT s.middle_name, a.zip_postcode FROM Students s JOIN Addresses a ON s.current_address_id = a.address_id"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM Students WHERE middle_name IS NOT NULL"
+      }
+    ]
+  },
+  "A3_control_aggregate_level": {
+    "v_before": 0,
+    "v_after": 0,
+    "n_rewrites": 0,
+    "level": "L0",
+    "message": "",
+    "violations_before": [],
+    "violations_after": [],
+    "sub_results": [],
+    "final_plan": [
+      {
+        "id": 0,
+        "sql": "SELECT COUNT(*) AS n FROM Students s JOIN Addresses a ON s.current_address_id = a.address_id"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM Students"
+      }
+    ]
+  },
+  "A4_control_join_key_mismatch": {
+    "v_before": 0,
+    "v_after": 0,
+    "n_rewrites": 0,
+    "level": "L0",
+    "message": "",
+    "violations_before": [],
+    "violations_after": [],
+    "sub_results": [],
+    "final_plan": [
+      {
+        "id": 0,
+        "sql": "SELECT s.middle_name, a.zip_postcode FROM Students s JOIN Addresses a ON s.current_address_id = a.address_id"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM Students WHERE middle_name IS NOT NULL"
+      }
+    ]
+  },
+  "A5_cross_domain_with_where_filters": {
+    "v_before": 1,
+    "v_after": 1,
+    "n_rewrites": 0,
+    "level": "L2",
+    "message": "Cannot compute exact result due to privacy policy constraints. The following output represents a related but different query. Contact the data administrator for full access authorization.",
+    "violations_before": [
+      "cross_domain_personal_join"
+    ],
+    "violations_after": [
+      "cross_domain_personal_join"
+    ],
+    "sub_results": [
+      {
+        "index": 0,
+        "violations_before": 1,
+        "violations_after": 1,
+        "rewritten": false,
+        "rewrite_log": []
+      }
+    ],
+    "final_plan": [
+      {
+        "id": "0_a",
+        "sql": "SELECT COUNT(*) AS aggregate_count\nFROM Students AS s\nWHERE s.date_first_registered > '2010-01-01'"
+      },
+      {
+        "id": "0_b",
+        "sql": "SELECT COUNT(*) AS aggregate_count\nFROM Addresses AS a\nWHERE a.city = 'Chicago'"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM Students WHERE middle_name IS NOT NULL"
+      }
+    ]
+  },
+  "B1_controlled_derived_arithmetic": {
+    "v_before": 2,
+    "v_after": 0,
+    "n_rewrites": 1,
+    "level": "L1",
+    "message": "The individual-level intermediate result was replaced with a secure aggregate-level alternative.",
+    "violations_before": [
+      "column_needs_aggregation",
+      "controlled_column_in_derived"
+    ],
+    "violations_after": [],
+    "sub_results": [
+      {
+        "index": 0,
+        "violations_before": 2,
+        "violations_after": 0,
+        "rewritten": true,
+        "rewrite_log": [
+          "Rule D: Wrapped 'amount * 1.0 AS amt...' in AVG()"
+        ]
+      }
+    ],
+    "final_plan": [
+      {
+        "id": 0,
+        "sql": "SELECT AVG(amount * 1.0) AS amt FROM trans"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM trans WHERE amount IS NOT NULL"
+      }
+    ]
+  },
+  "B2_controlled_derived_window": {
+    "v_before": 2,
+    "v_after": 0,
+    "n_rewrites": 1,
+    "level": "L0",
+    "message": "",
+    "violations_before": [
+      "column_unnecessary_exposure",
+      "controlled_column_in_derived"
+    ],
+    "violations_after": [],
+    "sub_results": [
+      {
+        "index": 0,
+        "violations_before": 2,
+        "violations_after": 0,
+        "rewritten": false,
+        "eliminated": true,
+        "rewrite_log": [
+          "Rule D: Removed 'ROW_NUMBER() OVER (ORDER BY amount) AS rn...' (not needed downstream)",
+          "Rule D: Kept the sole derived projection; removal would empty SELECT",
+          "Rule A: Removing amount (ECL=controlled, not needed downstream)",
+          "Rule A: sub-query eliminated (all projections restricted and unconsumed downstream)",
+          "Rule A: Added/capped LIMIT 100 for restricted ranking pattern"
+        ]
+      }
+    ],
+    "final_plan": [
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM trans"
+      }
+    ]
+  },
+  "B3_control_free_derived": {
+    "v_before": 0,
+    "v_after": 0,
+    "n_rewrites": 0,
+    "level": "L0",
+    "message": "",
+    "violations_before": [],
+    "violations_after": [],
+    "sub_results": [],
+    "final_plan": [
+      {
+        "id": 0,
+        "sql": "SELECT date || ' ' || operation AS label FROM trans"
+      },
+      {
+        "id": 1,
+        "sql": "SELECT COUNT(*) AS n FROM trans"
+      }
+    ]
+  }
+}

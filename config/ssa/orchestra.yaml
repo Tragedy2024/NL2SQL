@@ -1,0 +1,32 @@
+database: orchestra
+annotator: GPT-4o + human_review
+column_labels:
+  conductor:
+    Conductor_ID: free
+    Name: free
+    Age: free
+    Nationality: free
+    Year_of_Work: free
+  orchestra:
+    Orchestra_ID: free
+    Orchestra: free
+    Conductor_ID: free
+    Record_Company: free
+    Year_of_Founded: free
+    Major_Record_Format: free
+  performance:
+    Performance_ID: free
+    Orchestra_ID: free
+    Type: free
+    Date: free
+    Official_ratings_(millions): free
+    Weekly_rank: free
+    Share: free
+  show:
+    Show_ID: free
+    Performance_ID: free
+    If_first_show: free
+    Result: free
+    Attendance: free
+cross_domain_rules: []
+review_date: '2026-08-04'

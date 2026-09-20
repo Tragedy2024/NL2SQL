@@ -1,0 +1,30 @@
+Use func from core.llm in agents.py
+Use func from core.llm in chat_manager.py
+
+============================================================
+  RQ2 [bird/fewshot]
+  153 queries ¡Á 1 methods ¡Á 3 reps
+============================================================
+Checking network status...
+
+Use OpenAI model: deepseek-v4-pro
+
+
+sys_response: 
+Hello! How can I help you today?
+
+ prompt_token,response_token: 86 37
+
+Network is available
+load json file from E:\experiment\NL2SQL\data\bird-dev\dev_20240627\dev_tables.json
+Checking network status...
+
+Use OpenAI model: deepseek-v4-pro
+
+
+ prompt_token,response_token: 86 44
+
+
+ total_prompt_tokens,total_response_tokens: 86 44
+
+Network is available

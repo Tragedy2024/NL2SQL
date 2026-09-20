@@ -1,0 +1,38 @@
+{
+  "point_SVR_bird_few_pct": 0.7725898555592879,
+  "point_SVR_spider_few_pct": 1.5160349854227406,
+  "point_ratio_spider_over_bird": 1.962276587653695,
+  "reproduced_CI_pct": {
+    "bird_fewshot": [
+      0.4445812589236992,
+      1.1236047915312468
+    ],
+    "bird_zeroshot": [
+      0.0,
+      0.0
+    ],
+    "spider_fewshot": [
+      0.8087810514153668,
+      2.355747307137309
+    ],
+    "spider_zeroshot": [
+      0.0,
+      0.2912621359223301
+    ]
+  },
+  "diff_CI_pct": [
+    -0.04693543866240574,
+    1.651223712519178
+  ],
+  "ratio_CI": [
+    0.9474542054925125,
+    3.8755807217635696
+  ],
+  "bootstrap_p_diff": 0.0694,
+  "bootstrap_p_ratio_eq1": 0.0694,
+  "n_resamples": 10000,
+  "seed": 42,
+  "fraction_diff_le_0": 0.0347,
+  "fraction_ratio_le_1": 0.0347,
+  "fraction_ratio_ge_2": 0.4745
+}

@@ -1,0 +1,15 @@
+database: network_1
+annotator: GPT-4o + human_review
+column_labels:
+  Highschooler:
+    ID: free
+    name: controlled
+    grade: free
+  Friend:
+    student_id: free
+    friend_id: free
+  Likes:
+    student_id: free
+    liked_id: free
+cross_domain_rules: []
+review_date: '2026-08-04'

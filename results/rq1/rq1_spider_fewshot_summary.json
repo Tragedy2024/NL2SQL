@@ -1,0 +1,17 @@
+{
+  "rq": "RQ1",
+  "dataset": "spider",
+  "mode": "fewshot",
+  "n_queries": 1034,
+  "n_repetitions": 1,
+  "total_sub_queries": 1715,
+  "total_violations": 139,
+  "S_VR": 0.081,
+  "S_VR_pct": 8.1,
+  "violation_types": {
+    "column_unnecessary_exposure": 2
+  },
+  "violation_severities": {
+    "rewritable": 2
+  }
+}

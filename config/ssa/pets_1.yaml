@@ -1,0 +1,22 @@
+database: pets_1
+annotator: GPT-4o + human_review
+column_labels:
+  Student:
+    StuID: free
+    LName: controlled
+    Fname: controlled
+    Age: controlled
+    Sex: free
+    Major: free
+    Advisor: free
+    city_code: free
+  Has_Pet:
+    StuID: free
+    PetID: free
+  Pets:
+    PetID: free
+    PetType: free
+    pet_age: free
+    weight: free
+cross_domain_rules: []
+review_date: '2026-08-04'

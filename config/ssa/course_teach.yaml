@@ -1,0 +1,18 @@
+database: course_teach
+annotator: GPT-4o + human_review
+column_labels:
+  course:
+    Course_ID: free
+    Staring_Date: free
+    Course: free
+  teacher:
+    Teacher_ID: free
+    Name: controlled
+    Age: controlled
+    Hometown: free
+  course_arrange:
+    Course_ID: free
+    Teacher_ID: free
+    Grade: free
+cross_domain_rules: []
+review_date: '2026-08-04'

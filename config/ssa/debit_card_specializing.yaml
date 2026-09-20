@@ -1,0 +1,29 @@
+column_labels:
+  customers:
+    CustomerID: free
+    Segment: free
+    Currency: free
+  gasstations:
+    GasStationID: free
+    ChainID: free
+    Country: free
+    Segment: free
+  products:
+    ProductID: free
+    Description: free
+  transactions_1k:
+    TransactionID: free
+    Date: free
+    Time: free
+    CustomerID: free
+    CardID: free
+    GasStationID: free
+    ProductID: free
+    Amount: free
+    Price: free
+  yearmonth:
+    CustomerID: free
+    Date: free
+    Consumption: free
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'

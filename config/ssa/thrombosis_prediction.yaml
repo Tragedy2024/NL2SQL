@@ -1,0 +1,70 @@
+column_labels:
+  Examination:
+    ID: free
+    Examination Date: free
+    aCL IgG: controlled
+    aCL IgM: controlled
+    ANA: controlled
+    ANA Pattern: controlled
+    aCL IgA: controlled
+    Diagnosis: controlled
+    KCT: controlled
+    RVVT: controlled
+    LAC: controlled
+    Symptoms: controlled
+    Thrombosis: controlled
+  Laboratory:
+    ID: free
+    Date: free
+    GOT: controlled
+    GPT: controlled
+    LDH: controlled
+    ALP: controlled
+    TP: controlled
+    ALB: controlled
+    UA: controlled
+    UN: controlled
+    CRE: controlled
+    T-BIL: controlled
+    T-CHO: controlled
+    TG: controlled
+    CPK: controlled
+    GLU: controlled
+    WBC: controlled
+    RBC: controlled
+    HGB: controlled
+    HCT: controlled
+    PLT: controlled
+    PT: controlled
+    APTT: controlled
+    FG: controlled
+    PIC: controlled
+    TAT: controlled
+    TAT2: controlled
+    U-PRO: controlled
+    IGG: controlled
+    IGA: controlled
+    IGM: controlled
+    CRP: controlled
+    RA: controlled
+    RF: controlled
+    C3: controlled
+    C4: controlled
+    RNP: controlled
+    SM: controlled
+    SC170: controlled
+    SSA: controlled
+    SSB: controlled
+    CENTROMEA: controlled
+    DNA: controlled
+    DNA-II: controlled
+  Patient:
+    ID: free
+    SEX: free
+    Birthday: free
+    Description: free
+    First Date: free
+    Admission: free
+    Diagnosis: controlled
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'

@@ -1,0 +1,26 @@
+database: cre_Doc_Template_Mgt
+annotator: GPT-4o + human_review
+column_labels:
+  Ref_Template_Types:
+    Template_Type_Code: free
+    Template_Type_Description: free
+  Templates:
+    Template_ID: free
+    Version_Number: free
+    Template_Type_Code: free
+    Date_Effective_From: free
+    Date_Effective_To: free
+    Template_Details: free
+  Documents:
+    Document_ID: free
+    Template_ID: free
+    Document_Name: free
+    Document_Description: free
+    Other_Details: free
+  Paragraphs:
+    Paragraph_ID: free
+    Document_ID: free
+    Paragraph_Text: free
+    Other_Details: free
+cross_domain_rules: []
+review_date: '2026-08-04'

@@ -1,0 +1,23 @@
+{
+  "rq": "RQ1",
+  "dataset": "bird",
+  "mode": "zeroshot",
+  "n_records_raw": 1534,
+  "n_queries": 1529,
+  "n_skipped_empty": 5,
+  "parse_failures_L3": 0,
+  "total_sub_queries": 1529,
+  "total_violations_before": 0,
+  "S_VR": 0.0,
+  "total_violations_after": 0,
+  "S_VR_after": 0.0,
+  "S_AR": null,
+  "n_rewrites": 0,
+  "EX": 0.4846,
+  "degradation": {
+    "L0": 1528,
+    "L2": 1
+  },
+  "violation_types": {},
+  "violation_severities": {}
+}

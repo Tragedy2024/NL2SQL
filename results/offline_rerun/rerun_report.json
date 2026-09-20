@@ -1,0 +1,808 @@
+{
+  "generated_by": "experiments/offline_rerun.py",
+  "results_root": "E:\\experiment\\NL2SQL\\results",
+  "note": "Zero LLM calls — audit re-run on cached decomposition plans.",
+  "rq1_bird_fewshot": {
+    "rq": "RQ1",
+    "dataset": "bird",
+    "mode": "fewshot",
+    "n_records_raw": 1538,
+    "n_queries": 1534,
+    "n_skipped_empty": 0,
+    "parse_failures_L3": 2,
+    "total_sub_queries": 2978,
+    "total_violations_before": 23,
+    "S_VR": 0.0077,
+    "total_violations_after": 0,
+    "S_VR_after": 0.0,
+    "S_AR": 1.0,
+    "n_rewrites": 22,
+    "EX": 0.6278,
+    "degradation": {
+      "L0": 1513,
+      "L1": 19,
+      "L3": 2
+    },
+    "violation_types": {
+      "column_needs_aggregation": 21,
+      "column_unnecessary_exposure": 2
+    },
+    "violation_severities": {
+      "rewritable": 23
+    }
+  },
+  "rq1_bird_zeroshot": {
+    "rq": "RQ1",
+    "dataset": "bird",
+    "mode": "zeroshot",
+    "n_records_raw": 1534,
+    "n_queries": 1529,
+    "n_skipped_empty": 5,
+    "parse_failures_L3": 0,
+    "total_sub_queries": 1529,
+    "total_violations_before": 0,
+    "S_VR": 0.0,
+    "total_violations_after": 0,
+    "S_VR_after": 0.0,
+    "S_AR": null,
+    "n_rewrites": 0,
+    "EX": 0.4846,
+    "degradation": {
+      "L0": 1528,
+      "L2": 1
+    },
+    "violation_types": {},
+    "violation_severities": {}
+  },
+  "rq1_spider_fewshot": {
+    "rq": "RQ1",
+    "dataset": "spider",
+    "mode": "fewshot",
+    "n_records_raw": 1034,
+    "n_queries": 1034,
+    "n_skipped_empty": 0,
+    "parse_failures_L3": 1,
+    "total_sub_queries": 1715,
+    "total_violations_before": 26,
+    "S_VR": 0.0152,
+    "total_violations_after": 0,
+    "S_VR_after": 0.0,
+    "S_AR": 1.0,
+    "n_rewrites": 22,
+    "EX": 0.7621,
+    "degradation": {
+      "L0": 1009,
+      "L1": 17,
+      "L2": 7,
+      "L3": 1
+    },
+    "violation_types": {
+      "column_needs_aggregation": 25,
+      "blocked_column_in_select": 1
+    },
+    "violation_severities": {
+      "rewritable": 25,
+      "must_degrade": 1
+    }
+  },
+  "rq1_spider_zeroshot": {
+    "rq": "RQ1",
+    "dataset": "spider",
+    "mode": "zeroshot",
+    "n_records_raw": 1034,
+    "n_queries": 1032,
+    "n_skipped_empty": 2,
+    "parse_failures_L3": 0,
+    "total_sub_queries": 1032,
+    "total_violations_before": 1,
+    "S_VR": 0.001,
+    "total_violations_after": 0,
+    "S_VR_after": 0.0,
+    "S_AR": 1.0,
+    "n_rewrites": 1,
+    "EX": 0.7742,
+    "degradation": {
+      "L0": 1023,
+      "L2": 9
+    },
+    "violation_types": {
+      "blocked_column_in_select": 1
+    },
+    "violation_severities": {
+      "must_degrade": 1
+    }
+  },
+  "rq2_bird_fewshot": {
+    "dataset": "bird",
+    "mode": "fewshot",
+    "methods": {
+      "B0": {
+        "n": 459,
+        "EX": 0.6209,
+        "ex_known": 459,
+        "S_VR_pre": 0.0078,
+        "S_VR_post": 0.0078,
+        "S_AR": 0.0,
+        "V": 7,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 459
+        },
+        "n_subqueries": 894
+      },
+      "B1": {
+        "n": 459,
+        "EX": 0.6209,
+        "ex_known": 459,
+        "S_VR_pre": 0.0078,
+        "S_VR_post": 0.0078,
+        "S_AR": 0.0,
+        "V": 7,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 452,
+          "L1": 7
+        },
+        "n_subqueries": 894
+      },
+      "B2": {
+        "n": 459,
+        "EX": 0.6209,
+        "ex_known": 459,
+        "S_VR_pre": 0.0078,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 7,
+        "n_rewrites": 7,
+        "degradation": {
+          "L0": 454,
+          "L1": 5
+        },
+        "n_subqueries": 894
+      },
+      "B3": {
+        "n": 458,
+        "EX": 0.6288,
+        "ex_known": 458,
+        "S_VR_pre": 0.0507,
+        "S_VR_post": 0.0496,
+        "S_AR": 0.0222,
+        "V": 45,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 887
+      },
+      "B4": {
+        "n": 459,
+        "EX": 0.6383,
+        "ex_known": 459,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 459
+        },
+        "n_subqueries": 766
+      },
+      "B0-Q": {
+        "n": 459,
+        "EX": 0.4183,
+        "ex_known": 459,
+        "S_VR_pre": 0.7137,
+        "S_VR_post": 0.7137,
+        "S_AR": 0.0,
+        "V": 1563,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 459
+        },
+        "n_subqueries": 2190
+      },
+      "B1-Q": {
+        "n": 459,
+        "EX": 0.4183,
+        "ex_known": 459,
+        "S_VR_pre": 0.7137,
+        "S_VR_post": 0.7137,
+        "S_AR": 0.0,
+        "V": 1563,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 342,
+          "L1": 117
+        },
+        "n_subqueries": 2190
+      },
+      "B2-Q": {
+        "n": 459,
+        "EX": 0.4183,
+        "ex_known": 459,
+        "S_VR_pre": 0.7137,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 1563,
+        "n_rewrites": 231,
+        "degradation": {
+          "L0": 372,
+          "L1": 84,
+          "L3": 3
+        },
+        "n_subqueries": 2190
+      },
+      "B3-Q": {
+        "n": 459,
+        "EX": 0.4183,
+        "ex_known": 459,
+        "S_VR_pre": 0.089,
+        "S_VR_post": 0.0644,
+        "S_AR": 0.2769,
+        "V": 195,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 2190
+      },
+      "B4-Q": {
+        "n": 453,
+        "EX": 0.532,
+        "ex_known": 453,
+        "S_VR_pre": 0.0798,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 169,
+        "n_rewrites": 110,
+        "degradation": {
+          "L0": 380,
+          "L1": 73
+        },
+        "n_subqueries": 2119
+      },
+      "_skipped": {
+        "b3_no_db": 1,
+        "empty_plan": 6
+      }
+    },
+    "stats": {
+      "mcnemar_B1_vs_B2Q_EX": {
+        "statistic": 65.0301,
+        "p_value": 0.0,
+        "significant": true,
+        "table": {
+          "both_correct": 172,
+          "a_only_correct": 113,
+          "b_only_correct": 20,
+          "neither_correct": 154
+        }
+      },
+      "bootstrap_B6_SVR": {
+        "mean": 0.6843,
+        "ci_lower": 0.4632,
+        "ci_upper": 0.934,
+        "std_err": 0.1195,
+        "n": 459,
+        "ci_level": 0.95
+      }
+    }
+  },
+  "rq2_bird_zeroshot": {
+    "dataset": "bird",
+    "mode": "zeroshot",
+    "methods": {
+      "B0": {
+        "n": 458,
+        "EX": 0.5197,
+        "ex_known": 458,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 458
+        },
+        "n_subqueries": 458
+      },
+      "B1": {
+        "n": 458,
+        "EX": 0.5197,
+        "ex_known": 458,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 458
+        },
+        "n_subqueries": 458
+      },
+      "B2": {
+        "n": 458,
+        "EX": 0.5197,
+        "ex_known": 458,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 458
+        },
+        "n_subqueries": 458
+      },
+      "B3": {
+        "n": 457,
+        "EX": 0.512,
+        "ex_known": 457,
+        "S_VR_pre": 0.07,
+        "S_VR_post": 0.07,
+        "S_AR": 0.0,
+        "V": 32,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 457
+      },
+      "B4": {
+        "n": 457,
+        "EX": 0.5405,
+        "ex_known": 457,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 457
+        },
+        "n_subqueries": 457
+      },
+      "B0-Q": {
+        "n": 456,
+        "EX": 0.4934,
+        "ex_known": 456,
+        "S_VR_pre": 0.4298,
+        "S_VR_post": 0.4298,
+        "S_AR": 0.0,
+        "V": 927,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 456
+        },
+        "n_subqueries": 2157
+      },
+      "B1-Q": {
+        "n": 456,
+        "EX": 0.4934,
+        "ex_known": 456,
+        "S_VR_pre": 0.4298,
+        "S_VR_post": 0.4298,
+        "S_AR": 0.0,
+        "V": 927,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 357,
+          "L1": 99
+        },
+        "n_subqueries": 2157
+      },
+      "B2-Q": {
+        "n": 456,
+        "EX": 0.4934,
+        "ex_known": 456,
+        "S_VR_pre": 0.4298,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 927,
+        "n_rewrites": 207,
+        "degradation": {
+          "L0": 366,
+          "L1": 90
+        },
+        "n_subqueries": 2157
+      },
+      "B3-Q": {
+        "n": 456,
+        "EX": 0.4934,
+        "ex_known": 456,
+        "S_VR_pre": 0.1071,
+        "S_VR_post": 0.0821,
+        "S_AR": 0.2338,
+        "V": 231,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 2157
+      },
+      "B4-Q": {
+        "n": 456,
+        "EX": 0.5319,
+        "ex_known": 455,
+        "S_VR_pre": 0.0492,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 105,
+        "n_rewrites": 99,
+        "degradation": {
+          "L0": 397,
+          "L1": 58,
+          "L3": 1
+        },
+        "n_subqueries": 2134
+      },
+      "_skipped": {
+        "empty_plan": 10
+      }
+    },
+    "stats": {
+      "mcnemar_B1_vs_B2Q_EX": {
+        "statistic": 1.5556,
+        "p_value": 0.2467,
+        "significant": false,
+        "table": {
+          "both_correct": 168,
+          "a_only_correct": 70,
+          "b_only_correct": 56,
+          "neither_correct": 161
+        }
+      },
+      "bootstrap_B6_SVR": {
+        "mean": 0.4104,
+        "ci_lower": 0.2654,
+        "ci_upper": 0.572,
+        "std_err": 0.0776,
+        "n": 456,
+        "ci_level": 0.95
+      }
+    }
+  },
+  "rq2_spider_fewshot": {
+    "dataset": "spider",
+    "mode": "fewshot",
+    "methods": {
+      "B0": {
+        "n": 309,
+        "EX": 0.767,
+        "ex_known": 309,
+        "S_VR_pre": 0.0076,
+        "S_VR_post": 0.0076,
+        "S_AR": 0.0,
+        "V": 4,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 309
+        },
+        "n_subqueries": 523
+      },
+      "B1": {
+        "n": 309,
+        "EX": 0.767,
+        "ex_known": 309,
+        "S_VR_pre": 0.0076,
+        "S_VR_post": 0.0076,
+        "S_AR": 0.0,
+        "V": 4,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 306,
+          "L1": 3
+        },
+        "n_subqueries": 523
+      },
+      "B2": {
+        "n": 309,
+        "EX": 0.767,
+        "ex_known": 309,
+        "S_VR_pre": 0.0076,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 4,
+        "n_rewrites": 3,
+        "degradation": {
+          "L0": 303,
+          "L2": 3,
+          "L1": 3
+        },
+        "n_subqueries": 523
+      },
+      "B3": {
+        "n": 309,
+        "EX": 0.7443,
+        "ex_known": 309,
+        "S_VR_pre": 0.0352,
+        "S_VR_post": 0.0294,
+        "S_AR": 0.1667,
+        "V": 18,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 511
+      },
+      "B4": {
+        "n": 309,
+        "EX": 0.767,
+        "ex_known": 309,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 306,
+          "L2": 3
+        },
+        "n_subqueries": 495
+      },
+      "B0-Q": {
+        "n": 309,
+        "EX": 0.5784,
+        "ex_known": 306,
+        "S_VR_pre": 0.0796,
+        "S_VR_post": 0.0796,
+        "S_AR": 0.0,
+        "V": 102,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 306,
+          "L3": 3
+        },
+        "n_subqueries": 1281
+      },
+      "B1-Q": {
+        "n": 309,
+        "EX": 0.5784,
+        "ex_known": 306,
+        "S_VR_pre": 0.0796,
+        "S_VR_post": 0.0796,
+        "S_AR": 0.0,
+        "V": 102,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 267,
+          "L3": 3,
+          "L1": 39
+        },
+        "n_subqueries": 1281
+      },
+      "B2-Q": {
+        "n": 309,
+        "EX": 0.5784,
+        "ex_known": 306,
+        "S_VR_pre": 0.0796,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 102,
+        "n_rewrites": 78,
+        "degradation": {
+          "L0": 279,
+          "L3": 3,
+          "L1": 27
+        },
+        "n_subqueries": 1281
+      },
+      "B3-Q": {
+        "n": 306,
+        "EX": 0.5784,
+        "ex_known": 306,
+        "S_VR_pre": 0.0569,
+        "S_VR_post": 0.0284,
+        "S_AR": 0.5,
+        "V": 72,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 1266
+      },
+      "B4-Q": {
+        "n": 309,
+        "EX": 0.6634,
+        "ex_known": 309,
+        "S_VR_pre": 0.0436,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 55,
+        "n_rewrites": 46,
+        "degradation": {
+          "L0": 282,
+          "L2": 3,
+          "L1": 24
+        },
+        "n_subqueries": 1262
+      },
+      "_skipped": {
+        "b3_no_db": 3
+      }
+    },
+    "stats": {
+      "mcnemar_B1_vs_B2Q_EX": {
+        "statistic": 51.4286,
+        "p_value": 0.0,
+        "significant": true,
+        "table": {
+          "both_correct": 172,
+          "a_only_correct": 65,
+          "b_only_correct": 5,
+          "neither_correct": 67
+        }
+      },
+      "bootstrap_B6_SVR": {
+        "mean": 0.0748,
+        "ci_lower": 0.0508,
+        "ci_upper": 0.101,
+        "std_err": 0.0127,
+        "n": 309,
+        "ci_level": 0.95
+      }
+    }
+  },
+  "rq2_spider_zeroshot": {
+    "dataset": "spider",
+    "mode": "zeroshot",
+    "methods": {
+      "B0": {
+        "n": 309,
+        "EX": 0.7702,
+        "ex_known": 309,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 309
+        },
+        "n_subqueries": 309
+      },
+      "B1": {
+        "n": 309,
+        "EX": 0.7702,
+        "ex_known": 309,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 309
+        },
+        "n_subqueries": 309
+      },
+      "B2": {
+        "n": 309,
+        "EX": 0.7702,
+        "ex_known": 309,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 306,
+          "L2": 3
+        },
+        "n_subqueries": 309
+      },
+      "B3": {
+        "n": 309,
+        "EX": 0.7638,
+        "ex_known": 309,
+        "S_VR_pre": 0.0259,
+        "S_VR_post": 0.0259,
+        "S_AR": 0.0,
+        "V": 8,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 309
+      },
+      "B4": {
+        "n": 308,
+        "EX": 0.7695,
+        "ex_known": 308,
+        "S_VR_pre": 0.0,
+        "S_VR_post": 0.0,
+        "S_AR": null,
+        "V": 0,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 305,
+          "L2": 3
+        },
+        "n_subqueries": 308
+      },
+      "B0-Q": {
+        "n": 309,
+        "EX": 0.5922,
+        "ex_known": 309,
+        "S_VR_pre": 0.0609,
+        "S_VR_post": 0.0609,
+        "S_AR": 0.0,
+        "V": 78,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 309
+        },
+        "n_subqueries": 1281
+      },
+      "B1-Q": {
+        "n": 309,
+        "EX": 0.5922,
+        "ex_known": 309,
+        "S_VR_pre": 0.0609,
+        "S_VR_post": 0.0609,
+        "S_AR": 0.0,
+        "V": 78,
+        "n_rewrites": 0,
+        "degradation": {
+          "L0": 279,
+          "L1": 30
+        },
+        "n_subqueries": 1281
+      },
+      "B2-Q": {
+        "n": 309,
+        "EX": 0.5922,
+        "ex_known": 309,
+        "S_VR_pre": 0.0609,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 78,
+        "n_rewrites": 57,
+        "degradation": {
+          "L0": 282,
+          "L1": 27
+        },
+        "n_subqueries": 1281
+      },
+      "B3-Q": {
+        "n": 309,
+        "EX": 0.5922,
+        "ex_known": 309,
+        "S_VR_pre": 0.0632,
+        "S_VR_post": 0.0422,
+        "S_AR": 0.3333,
+        "V": 81,
+        "n_rewrites": 0,
+        "degradation": {},
+        "n_subqueries": 1281
+      },
+      "B4-Q": {
+        "n": 309,
+        "EX": 0.6591,
+        "ex_known": 308,
+        "S_VR_pre": 0.0438,
+        "S_VR_post": 0.0,
+        "S_AR": 1.0,
+        "V": 55,
+        "n_rewrites": 45,
+        "degradation": {
+          "L0": 281,
+          "L2": 2,
+          "L1": 25,
+          "L3": 1
+        },
+        "n_subqueries": 1255
+      },
+      "_skipped": {
+        "empty_plan": 1
+      }
+    },
+    "stats": {
+      "mcnemar_B1_vs_B2Q_EX": {
+        "statistic": 49.5902,
+        "p_value": 0.0,
+        "significant": true,
+        "table": {
+          "both_correct": 180,
+          "a_only_correct": 58,
+          "b_only_correct": 3,
+          "neither_correct": 68
+        }
+      },
+      "bootstrap_B6_SVR": {
+        "mean": 0.0592,
+        "ci_lower": 0.0369,
+        "ci_upper": 0.0841,
+        "std_err": 0.0121,
+        "n": 309,
+        "ci_level": 0.95
+      }
+    }
+  }
+}

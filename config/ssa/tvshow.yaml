@@ -1,0 +1,33 @@
+database: tvshow
+annotator: GPT-4o + human_review
+column_labels:
+  TV_Channel:
+    id: free
+    series_name: free
+    Country: free
+    Language: free
+    Content: free
+    Pixel_aspect_ratio_PAR: free
+    Hight_definition_TV: free
+    Pay_per_view_PPV: free
+    Package_Option: free
+  TV_series:
+    id: free
+    Episode: free
+    Air_Date: free
+    Rating: free
+    Share: free
+    18_49_Rating_Share: free
+    Viewers_m: free
+    Weekly_Rank: free
+    Channel: free
+  Cartoon:
+    id: free
+    Title: free
+    Directed_by: free
+    Written_by: free
+    Original_air_date: free
+    Production_code: free
+    Channel: free
+cross_domain_rules: []
+review_date: '2026-08-04'

@@ -1,0 +1,62 @@
+database: dog_kennels
+annotator: GPT-4o + human_review
+column_labels:
+  Breeds:
+    breed_code: free
+    breed_name: free
+  Charges:
+    charge_id: free
+    charge_type: free
+    charge_amount: free
+  Sizes:
+    size_code: free
+    size_description: free
+  Treatment_Types:
+    treatment_type_code: free
+    treatment_type_description: free
+  Owners:
+    owner_id: free
+    first_name: controlled
+    last_name: controlled
+    street: free
+    city: free
+    state: free
+    zip_code: free
+    email_address: controlled
+    home_phone: controlled
+    cell_number: free
+  Dogs:
+    dog_id: free
+    owner_id: free
+    abandoned_yn: free
+    breed_code: free
+    size_code: free
+    name: free
+    age: controlled
+    date_of_birth: free
+    gender: free
+    weight: free
+    date_arrived: free
+    date_adopted: free
+    date_departed: free
+  Professionals:
+    professional_id: free
+    role_code: free
+    first_name: controlled
+    street: free
+    city: free
+    state: free
+    zip_code: free
+    last_name: controlled
+    email_address: controlled
+    home_phone: controlled
+    cell_number: free
+  Treatments:
+    treatment_id: free
+    dog_id: free
+    professional_id: free
+    treatment_type_code: free
+    date_of_treatment: free
+    cost_of_treatment: free
+cross_domain_rules: []
+review_date: '2026-08-04'

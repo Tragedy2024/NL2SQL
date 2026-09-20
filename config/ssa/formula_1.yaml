@@ -1,0 +1,110 @@
+column_labels:
+  circuits:
+    circuitId: free
+    circuitRef: free
+    name: free
+    location: free
+    country: free
+    lat: free
+    lng: free
+    alt: free
+    url: free
+  constructorResults:
+    constructorResultsId: free
+    raceId: free
+    constructorId: free
+    points: free
+    status: free
+  constructorStandings:
+    constructorStandingsId: free
+    raceId: free
+    constructorId: free
+    points: free
+    position: free
+    positionText: free
+    wins: free
+  constructors:
+    constructorId: free
+    constructorRef: free
+    name: free
+    nationality: free
+    url: free
+  driverStandings:
+    driverStandingsId: free
+    raceId: free
+    driverId: free
+    points: free
+    position: free
+    positionText: free
+    wins: free
+  drivers:
+    driverId: free
+    driverRef: free
+    number: free
+    code: free
+    forename: free
+    surname: free
+    dob: free
+    nationality: free
+    url: free
+  lapTimes:
+    raceId: free
+    driverId: free
+    lap: free
+    position: free
+    time: free
+    milliseconds: free
+  pitStops:
+    raceId: free
+    driverId: free
+    stop: free
+    lap: free
+    time: free
+    duration: free
+    milliseconds: free
+  qualifying:
+    qualifyId: free
+    raceId: free
+    driverId: free
+    constructorId: free
+    number: free
+    position: free
+    q1: free
+    q2: free
+    q3: free
+  races:
+    raceId: free
+    year: free
+    round: free
+    circuitId: free
+    name: free
+    date: free
+    time: free
+    url: free
+  results:
+    resultId: free
+    raceId: free
+    driverId: free
+    constructorId: free
+    number: free
+    grid: free
+    position: free
+    positionText: free
+    positionOrder: free
+    points: free
+    laps: free
+    time: free
+    milliseconds: free
+    fastestLap: free
+    rank: free
+    fastestLapTime: free
+    fastestLapSpeed: free
+    statusId: free
+  seasons:
+    year: free
+    url: free
+  status:
+    statusId: free
+    status: free
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'

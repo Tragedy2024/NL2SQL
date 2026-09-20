@@ -1,0 +1,26 @@
+database: battle_death
+annotator: GPT-4o + human_review
+column_labels:
+  battle:
+    id: free
+    name: free
+    date: free
+    bulgarian_commander: free
+    latin_commander: free
+    result: free
+  ship:
+    lost_in_battle: free
+    id: free
+    name: free
+    tonnage: free
+    ship_type: free
+    location: free
+    disposition_of_ship: free
+  death:
+    caused_by_ship_id: free
+    id: free
+    note: free
+    killed: free
+    injured: free
+cross_domain_rules: []
+review_date: '2026-08-04'

@@ -1,0 +1,72 @@
+database: student_transcripts_tracking
+annotator: GPT-4o + human_review
+column_labels:
+  Addresses:
+    address_id: free
+    line_1: free
+    line_2: free
+    line_3: free
+    city: free
+    zip_postcode: free
+    state_province_county: free
+    country: free
+    other_address_details: controlled
+  Courses:
+    course_id: free
+    course_name: free
+    course_description: free
+    other_details: free
+  Departments:
+    department_id: free
+    department_name: free
+    department_description: free
+    other_details: free
+  Degree_Programs:
+    degree_program_id: free
+    department_id: free
+    degree_summary_name: free
+    degree_summary_description: free
+    other_details: free
+  Sections:
+    section_id: free
+    course_id: free
+    section_name: free
+    section_description: free
+    other_details: free
+  Semesters:
+    semester_id: free
+    semester_name: free
+    semester_description: free
+    other_details: free
+  Students:
+    student_id: free
+    current_address_id: free
+    permanent_address_id: free
+    first_name: controlled
+    middle_name: free
+    last_name: controlled
+    cell_mobile_number: free
+    email_address: controlled
+    ssn: blocked
+    date_first_registered: free
+    date_left: free
+    other_student_details: free
+  Student_Enrolment:
+    student_enrolment_id: free
+    degree_program_id: free
+    semester_id: free
+    student_id: free
+    other_details: free
+  Student_Enrolment_Courses:
+    student_course_id: free
+    course_id: free
+    student_enrolment_id: free
+  Transcripts:
+    transcript_id: free
+    transcript_date: free
+    other_details: free
+  Transcript_Contents:
+    student_course_id: free
+    transcript_id: free
+cross_domain_rules: []
+review_date: '2026-08-04'

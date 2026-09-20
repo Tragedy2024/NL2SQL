@@ -1,0 +1,18 @@
+database: poker_player
+annotator: GPT-4o + human_review
+column_labels:
+  poker_player:
+    Poker_Player_ID: free
+    People_ID: free
+    Final_Table_Made: free
+    Best_Finish: free
+    Money_Rank: free
+    Earnings: free
+  people:
+    People_ID: free
+    Nationality: free
+    Name: free
+    Birth_Date: free
+    Height: free
+cross_domain_rules: []
+review_date: '2026-08-04'

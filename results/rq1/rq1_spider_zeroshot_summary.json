@@ -1,0 +1,13 @@
+{
+  "rq": "RQ1",
+  "dataset": "spider",
+  "mode": "zeroshot",
+  "n_queries": 1034,
+  "n_repetitions": 1,
+  "total_sub_queries": 1032,
+  "total_violations": 83,
+  "S_VR": 0.0804,
+  "S_VR_pct": 8.0,
+  "violation_types": {},
+  "violation_severities": {}
+}

@@ -1,0 +1,51 @@
+database: wta_1
+annotator: GPT-4o + human_review
+column_labels:
+  players:
+    player_id: free
+    first_name: free
+    last_name: free
+    hand: free
+    birth_date: free
+    country_code: free
+  matches:
+    best_of: free
+    draw_size: free
+    loser_age: free
+    loser_entry: free
+    loser_hand: free
+    loser_ht: free
+    loser_id: free
+    loser_ioc: free
+    loser_name: free
+    loser_rank: free
+    loser_rank_points: free
+    loser_seed: free
+    match_num: free
+    minutes: free
+    round: free
+    score: free
+    surface: free
+    tourney_date: free
+    tourney_id: free
+    tourney_level: free
+    tourney_name: free
+    winner_age: free
+    winner_entry: free
+    winner_hand: free
+    winner_ht: free
+    winner_id: free
+    winner_ioc: free
+    winner_name: free
+    winner_rank: free
+    winner_rank_points: free
+    winner_seed: free
+    year: free
+  rankings:
+    ranking_date: free
+    ranking: free
+    player_id: free
+    ranking_points: free
+    tours: free
+cross_domain_rules: []
+review_date: '2026-08-04'

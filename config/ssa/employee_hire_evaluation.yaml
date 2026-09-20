@@ -1,0 +1,26 @@
+database: employee_hire_evaluation
+annotator: GPT-4o + human_review
+column_labels:
+  employee:
+    Employee_ID: free
+    Name: controlled
+    Age: controlled
+    City: free
+  shop:
+    Shop_ID: free
+    Name: free
+    Location: free
+    District: free
+    Number_products: free
+    Manager_name: controlled
+  hiring:
+    Shop_ID: free
+    Employee_ID: free
+    Start_from: free
+    Is_full_time: free
+  evaluation:
+    Employee_ID: free
+    Year_awarded: free
+    Bonus: free
+cross_domain_rules: []
+review_date: '2026-08-04'

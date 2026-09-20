@@ -1,0 +1,30 @@
+database: concert_singer
+annotator: GPT-4o + human_review
+column_labels:
+  stadium:
+    Stadium_ID: free
+    Location: free
+    Name: free
+    Capacity: free
+    Highest: free
+    Lowest: free
+    Average: free
+  singer:
+    Singer_ID: free
+    Name: free
+    Country: free
+    Song_Name: free
+    Song_release_year: free
+    Age: free
+    Is_male: free
+  concert:
+    concert_ID: free
+    concert_Name: free
+    Theme: free
+    Stadium_ID: free
+    Year: free
+  singer_in_concert:
+    concert_ID: free
+    Singer_ID: free
+cross_domain_rules: []
+review_date: '2026-08-04'

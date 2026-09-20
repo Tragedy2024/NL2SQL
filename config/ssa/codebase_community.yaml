@@ -1,0 +1,82 @@
+column_labels:
+  badges:
+    Id: free
+    UserId: free
+    Name: free
+    Date: free
+  comments:
+    Id: free
+    PostId: free
+    Score: free
+    Text: free
+    CreationDate: free
+    UserId: free
+    UserDisplayName: free
+  postHistory:
+    Id: free
+    PostHistoryTypeId: free
+    PostId: free
+    RevisionGUID: free
+    CreationDate: free
+    UserId: free
+    Text: free
+    Comment: free
+    UserDisplayName: free
+  postLinks:
+    Id: free
+    CreationDate: free
+    PostId: free
+    RelatedPostId: free
+    LinkTypeId: free
+  posts:
+    Id: free
+    PostTypeId: free
+    AcceptedAnswerId: free
+    CreaionDate: free
+    Score: free
+    ViewCount: free
+    Body: free
+    OwnerUserId: free
+    LasActivityDate: free
+    Title: free
+    Tags: free
+    AnswerCount: free
+    CommentCount: free
+    FavoriteCount: free
+    LastEditorUserId: free
+    LastEditDate: free
+    CommunityOwnedDate: free
+    ParentId: free
+    ClosedDate: free
+    OwnerDisplayName: free
+    LastEditorDisplayName: free
+  tags:
+    Id: free
+    TagName: free
+    Count: free
+    ExcerptPostId: free
+    WikiPostId: free
+  users:
+    Id: free
+    Reputation: free
+    CreationDate: free
+    DisplayName: free
+    LastAccessDate: free
+    WebsiteUrl: free
+    Location: free
+    AboutMe: free
+    Views: free
+    UpVotes: free
+    DownVotes: free
+    AccountId: free
+    Age: controlled
+    ProfileImageUrl: free
+  votes:
+    Id: free
+    PostId: free
+    VoteTypeId: free
+    CreationDate: free
+    UserId: free
+    BountyAmount: free
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'

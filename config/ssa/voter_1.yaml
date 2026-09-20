@@ -1,0 +1,17 @@
+database: voter_1
+annotator: GPT-4o + human_review
+column_labels:
+  AREA_CODE_STATE:
+    area_code: free
+    state: free
+  CONTESTANTS:
+    contestant_number: free
+    contestant_name: free
+  VOTES:
+    vote_id: free
+    phone_number: controlled
+    state: free
+    contestant_number: free
+    created: free
+cross_domain_rules: []
+review_date: '2026-08-04'

@@ -1,0 +1,34 @@
+database: car_1
+annotator: GPT-4o + human_review
+column_labels:
+  continents:
+    ContId: free
+    Continent: free
+  countries:
+    CountryId: free
+    CountryName: free
+    Continent: free
+  car_makers:
+    Id: free
+    Maker: free
+    FullName: free
+    Country: free
+  model_list:
+    ModelId: free
+    Maker: free
+    Model: free
+  car_names:
+    MakeId: free
+    Model: free
+    Make: free
+  cars_data:
+    Id: free
+    MPG: free
+    Cylinders: free
+    Edispl: free
+    Horsepower: free
+    Weight: free
+    Accelerate: free
+    Year: free
+cross_domain_rules: []
+review_date: '2026-08-04'

@@ -1,0 +1,47 @@
+database: real_estate_properties
+annotator: GPT-4o + human_review
+column_labels:
+  Ref_Feature_Types:
+    feature_type_code: free
+    feature_type_name: free
+  Ref_Property_Types:
+    property_type_code: free
+    property_type_description: free
+  Other_Available_Features:
+    feature_id: free
+    feature_type_code: free
+    feature_name: free
+    feature_description: free
+  Properties:
+    property_id: free
+    property_type_code: free
+    date_on_market: free
+    date_sold: free
+    property_name: free
+    property_address: controlled
+    room_count: free
+    vendor_requested_price: free
+    buyer_offered_price: free
+    agreed_selling_price: free
+    apt_feature_1: free
+    apt_feature_2: free
+    apt_feature_3: free
+    fld_feature_1: free
+    fld_feature_2: free
+    fld_feature_3: free
+    hse_feature_1: free
+    hse_feature_2: free
+    hse_feature_3: free
+    oth_feature_1: free
+    oth_feature_2: free
+    oth_feature_3: free
+    shp_feature_1: free
+    shp_feature_2: free
+    shp_feature_3: free
+    other_property_details: free
+  Other_Property_Features:
+    property_id: free
+    feature_id: free
+    property_feature_description: free
+cross_domain_rules: []
+review_date: '2026-08-04'

@@ -1,0 +1,44 @@
+column_labels:
+  alignment:
+    id: free
+    alignment: free
+  attribute:
+    id: free
+    attribute_name: free
+  colour:
+    id: free
+    colour: free
+  gender:
+    id: free
+    gender: free
+  hero_attribute:
+    hero_id: free
+    attribute_id: free
+    attribute_value: free
+  hero_power:
+    hero_id: free
+    power_id: free
+  publisher:
+    id: free
+    publisher_name: free
+  race:
+    id: free
+    race: free
+  superhero:
+    id: free
+    superhero_name: free
+    full_name: free
+    gender_id: free
+    eye_colour_id: free
+    hair_colour_id: free
+    skin_colour_id: free
+    race_id: free
+    publisher_id: free
+    alignment_id: free
+    height_cm: free
+    weight_kg: free
+  superpower:
+    id: free
+    power_name: free
+annotator: GPT-4o + human_review
+review_date: '2026-07-20'
